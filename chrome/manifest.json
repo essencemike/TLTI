@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "TLTI",
+  "version": "1.0.0",
+  "description": "查看开源中国以及掘金每日最新资讯，Github 趋势榜，日常工具导航清单。",
+  "permissions": [
+    "*://*/*",
+    "tabs",
+    "unlimitedStorage",
+    "storage",
+    "history",
+    "management",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": [ "background.js" ]
+  },
+  "browser_action": {
+    "default_icon": "assets/icons/128x128.png",
+    "default_title": "Tool list and technical information."
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "assets/icons/16x16.png",
+    "48": "assets/icons/48x48.png",
+    "128": "assets/icons/128x128.png"
+  },
+  "offline_enabled": true
+}

@@ -1,0 +1,21 @@
+.clearfix() {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.table-header-cell() {
+  & .table-header-cell {
+    background-color: #E4EAEC;
+    color: #171717;
+    font-weight: normal;
+  }
+}
+
+.y-flex(@justifyContent: space-around, @alignItems: center) {
+  display: flex;
+  justify-content: @justifyContent;
+  align-items: @alignItems;
+}

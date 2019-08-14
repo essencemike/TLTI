@@ -1,0 +1,49 @@
+{
+  "name": "tlti",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "watch": "vue-cli-service build --mode production --watch",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.3.13",
+    "core-js": "^2.6.5",
+    "font-awesome": "^4.7.0",
+    "moment": "^2.24.0",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-i18n": "^8.11.2",
+    "vue-property-decorator": "^8.1.0",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "@types/nprogress": "^0.2.0",
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-typescript": "^3.8.0",
+    "@vue/cli-plugin-unit-jest": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "autoprefixer": "^9.6.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-plugin-import": "^1.12.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "jest": "^24.8.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "postcss-pxtorem": "^4.0.1",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "ts-jest": "^23.0.0",
+    "typescript": "^3.4.3",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

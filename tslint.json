@@ -1,0 +1,26 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**",
+      "src/utils/chrome.ts"
+    ]
+  },
+  "rules": {
+    "quotemark": [true, "single"],
+    "indent": [true, "spaces", 2],
+    "interface-name": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-console": [true, "log"],
+    "curly": [true, "ignore-same-line"],
+    "member-access": [true, "no-public"],
+    "only-arrow-functions": false,
+    "no-empty": false,
+    "no-unused-expression": false,
+    "no-consecutive-blank-lines": false
+  }
+}
