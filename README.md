@@ -4,7 +4,7 @@ chrome extension，Tool list and technical information。一款 程序员日常�
 ### 使用说明
 1. 下载本项目
 ```
-git clone 
+git clone https://github.com/essencemike/TLTI.git
 ```
 2. 执行 `npm run build`
 ```
