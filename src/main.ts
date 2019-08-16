@@ -2,16 +2,22 @@ import Vue from 'vue';
 
 // 引入第三方组件库
 import {
-  LocaleProvider,
-  message,
-  Modal,
-  notification,
-  Skeleton,
+  Loading,
+  MessageBox,
+  Message,
+  Notification,
   Icon,
   Switch,
   Divider,
   Tabs,
-} from 'ant-design-vue';
+  TabPane,
+  Select,
+  Option,
+  OptionGroup,
+  Row,
+  Col,
+  Card,
+} from 'element-ui';
 
 // 引入样式
 import 'normalize.css';
@@ -39,21 +45,29 @@ import App from './App.vue';
 
 Vue.config.productionTip = false;
 
-Vue.prototype.$message = message;
-Vue.prototype.$notification = notification;
-Vue.prototype.$info = Modal.info;
-Vue.prototype.$success = Modal.success;
-Vue.prototype.$error = Modal.error;
-Vue.prototype.$warning = Modal.warning;
-Vue.prototype.$confirm = Modal.confirm;
+Vue.prototype.$ELEMENT = { size: 'medium', zIndex: 3000 };
 
-Vue.use(LocaleProvider);
-Vue.use(Skeleton);
 Vue.use(Icon);
 Vue.use(Switch);
 Vue.use(Tabs);
-Vue.use(Tabs.TabPane);
+Vue.use(TabPane);
 Vue.use(Divider);
+Vue.use(Select);
+Vue.use(Option);
+Vue.use(OptionGroup);
+Vue.use(Row);
+Vue.use(Col);
+Vue.use(Card);
+
+Vue.use(Loading.directive);
+
+Vue.prototype.$loading = Loading.service;
+Vue.prototype.$msgbox = MessageBox;
+Vue.prototype.$alert = MessageBox.alert;
+Vue.prototype.$confirm = MessageBox.confirm;
+Vue.prototype.$prompt = MessageBox.prompt;
+Vue.prototype.$notify = Notification;
+Vue.prototype.$message = Message;
 
 new Vue({
   router,

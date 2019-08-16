@@ -32,6 +32,11 @@ export const appRouter = [
         name: 'Home',
         component: () => import('@/views/Home.vue'),
       },
+      {
+        path: 'github',
+        name: 'Github',
+        component: () => import('@/views/Github.vue'),
+      },
     ],
   },
   { path: '*', redirect: '/', hidden: true },

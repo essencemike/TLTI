@@ -2,18 +2,18 @@
 .layout
   .navbar
     .logo TLTI
-    .nav-router.nav-list 导航
-    .nav-router.github-trending Github 趋势榜
+    router-link.nav-router.nav-list(to="/home", active-class="nav-router-active") 导航
+    router-link.nav-router.github-trending(to="github", active-class="nav-router-active") Github 趋势榜
     .app-menu
-      a-icon(type="ellipsis")
+      i.el-icon-more
       ul.item-list
         li.item.section
           .title 应用选项
         li.item
           .title 在新标签页显示
-          a-switch(defaultChecked, size="small", @change="onChange")
+          el-switch(v-model="newtabs", @change="onChange")
         li.item.divider
-          a-divider
+          el-divider
         li.item.section
           .title 关于应用
         li.item
@@ -41,6 +41,7 @@ import TltiInfo from './TltiInfo.vue';
   },
 })
 export default class Layout extends Vue {
+  newtabs: boolean = true;
 
   onChange() {}
 }
@@ -85,15 +86,25 @@ export default class Layout extends Vue {
     color: #007fff;
     cursor: pointer;
     font-weight: 400;
+    text-decoration: none;
 
-    &:hover {
+    &:hover, &.nav-router-active {
       background-color: rgba(0, 0, 0, .05);
+    }
+
+    &:focus, &:hover {
+      text-decoration: none;
     }
   }
 
   .github-trending {
-    margin-right: 10px;
+    margin-right: 15px;
+    margin-left: 10px;
   }
+}
+
+.tlti-other {
+  flex: 1 1 auto;
 }
 
 .app-menu {
