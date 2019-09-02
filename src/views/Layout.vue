@@ -4,6 +4,7 @@
     .logo TLTI
     router-link.nav-router.nav-list(to="/home", active-class="nav-router-active") 导航
     router-link.nav-router.github-trending(to="github", active-class="nav-router-active") Github 趋势榜
+    router-link.nav-router.chrome-history(to="history", active-class="nav-router-active") 历史记录
     .app-menu
       i.el-icon-more
       ul.item-list
@@ -98,6 +99,10 @@ export default class Layout extends Vue {
   }
 
   .github-trending {
+    margin-left: 10px;
+  }
+
+  .chrome-history {
     margin-right: 15px;
     margin-left: 10px;
   }

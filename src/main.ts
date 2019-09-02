@@ -43,6 +43,12 @@ import i18n from '@/locale';
 
 import App from './App.vue';
 
+// tslint:disable-next-line
+const chrome = require('../chrome/chrome').default;
+
+// tslint:disable-next-line
+const storage = chrome.storage.sync;
+
 Vue.config.productionTip = false;
 
 Vue.prototype.$ELEMENT = { size: 'medium', zIndex: 3000 };
@@ -69,9 +75,42 @@ Vue.prototype.$prompt = MessageBox.prompt;
 Vue.prototype.$notify = Notification;
 Vue.prototype.$message = Message;
 
-new Vue({
-  router,
-  store,
-  i18n,
-  render: (h) => h(App),
-}).$mount('#app');
+storage.get(['tlticonfig', 'visible', 'conf', 'dbs'], (items: any) => {
+  // 默认订单菜单，新闻是否展示， 目前全部展示，TODO: 后续会增加显示，隐藏的功能
+  if (!items.visible) items.visible = {};
+  if (items.visible.header === undefined) items.visible.header = true;
+  if (items.visible.newBar === undefined) items.visible.newBar = true;
+
+  // 数据存储
+  if (!items.dbs) items.dbs = {};
+  if (items.dbs.nav === undefined) items.dbs.nav = [];
+
+  // 默认选中的栏目
+  if (!items.conf) items.conf = {};
+  // 默认是否在新标签页显示
+  if (items.conf.isNewTab === undefined) items.conf.isNewTab = true;
+  // 默认是否在新标签页显示
+  if (items.conf.historyTabType === undefined) items.conf.historyTabType = 'today';
+  // 默认展示页面
+  if (items.conf.pageType) items.conf.pageType = 'document';
+  // 默认新闻展示tab类型
+  if (items.conf.oscType) items.conf.oscType = '';
+
+  // Github 趋势榜设置
+  if (!items.conf.githubSince) items.conf.githubSince = '';
+  if (!items.conf.githubLang) items.conf.githubLang = '';
+
+  items.storage = storage;
+
+  if (!/#normal$/.test(location.hash) && items.conf.isNewTab === false) {
+    // tslint:disable-next-line
+    chrome.tabs.update({ url: 'chrome-search://local-ntp/local-ntp.html' });
+  } else {
+    new Vue({
+      router,
+      store,
+      i18n,
+      render: (h) => h(App, { props: { config: items } }),
+    }).$mount('#app');
+  }
+});

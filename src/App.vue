@@ -7,10 +7,38 @@
 import moment from 'moment';
 import 'moment/locale/zh-cn';
 
+// tslint:disable-next-line
+const chrome = require('../chrome/chrome').default;
+
 moment.locale('zh-cn');
 export default {
+  props: {
+    config: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
   data() {
-    return {};
+    return {
+      config: this.config,
+    };
+  },
+
+  provide() {
+    return {
+      config: this.config,
+    };
+  },
+
+  mounted() {
+    const { config } = this;
+    // tslint:disable-next-line
+    chrome.storage.onChanged.addListener((changes) => {
+      Object.keys(changes).forEach((key) => {
+        config[key] = changes[key].newValue;
+      });
+    });
+    this.config = config;
   },
 };
 </script>

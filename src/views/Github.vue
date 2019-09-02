@@ -250,6 +250,7 @@ export default class Github extends Vue {
   .repo-description {
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     padding: 8px 0;
     line-height: 20px;
     font-size: 14px;

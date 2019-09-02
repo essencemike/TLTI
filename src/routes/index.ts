@@ -37,6 +37,11 @@ export const appRouter = [
         name: 'Github',
         component: () => import('@/views/Github.vue'),
       },
+      {
+        path: 'history',
+        name: 'History',
+        component: () => import('@/views/History.vue'),
+      },
     ],
   },
   { path: '*', redirect: '/', hidden: true },

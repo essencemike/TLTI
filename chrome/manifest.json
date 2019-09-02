@@ -5,6 +5,7 @@
   "description": "查看开源中国以及掘金每日最新资讯，Github 趋势榜，日常工具导航清单。",
   "permissions": [
     "*://*/*",
+    "chrome://favicon/",
     "tabs",
     "unlimitedStorage",
     "storage",

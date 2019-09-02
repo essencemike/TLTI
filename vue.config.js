@@ -40,8 +40,8 @@ module.exports = {
     }
 
     // 移除prefetch 和 preload 插件
-    config.plugins.delete('preload');
-    config.plugins.delete('prefetch');
+    // config.plugins.delete('preload');
+    // config.plugins.delete('prefetch');
   },
   devServer: {
     historyApiFallback: true,

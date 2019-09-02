@@ -8,3 +8,4 @@ import Vue from 'vue';
  * 所有公共组件统一在此处引入注册
  */
 Vue.component('JueJin', () => import('@/components/JueJin/index.vue'));
+Vue.component('EuiTime', () => import('@/components/EuiTime/index.vue'));
