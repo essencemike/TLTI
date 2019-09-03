@@ -69,7 +69,8 @@ export default class History extends Vue {
       microsecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
     }
     if (tab === 'today') {
-      microsecondsPerWeek = new Date().getTime() - new Date(moment().startOf('day').format('yyyy-MM-DD HH:mm:ss')).getTime();
+      const startDay = moment().startOf('day').format('yyyy-MM-DD HH:mm:ss');
+      microsecondsPerWeek = new Date().getTime() - new Date(startDay).getTime();
     }
 
     const oneWeekAgo = new Date().getTime() - microsecondsPerWeek;
@@ -99,6 +100,7 @@ export default class History extends Vue {
 
   &__title {
     flex: 1;
+    color: grey;
   }
 
   &__setting {

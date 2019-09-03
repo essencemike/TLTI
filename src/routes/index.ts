@@ -30,7 +30,7 @@ export const appRouter = [
       {
         path: 'home',
         name: 'Home',
-        component: () => import('@/views/Home.vue'),
+        component: () => import('@/views/Navigation.vue'),
       },
       {
         path: 'github',

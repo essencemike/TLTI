@@ -1,0 +1,316 @@
+[
+  {
+    "label": "默认",
+    "value": "default",
+    "children": [
+      {
+        "label": "知乎",
+        "value": "https://www.zhihu.com",
+        "icon": "https://jaywcjlove.github.io/logo/zhihu.svg"
+      },
+      {
+        "label": "V2EX",
+        "value": "https://www.v2ex.com",
+        "icon": "https://jaywcjlove.github.io/logo/v2ex.svg"
+      },
+      {
+        "label": "简书",
+        "value": "http://www.jianshu.com",
+        "icon": "https://jaywcjlove.github.io/logo/jianshu.png"
+      },
+      {
+        "label": "Stack Overflow",
+        "value": "http://stackoverflow.com/",
+        "icon": "https://jaywcjlove.github.io/logo/stackoverflow.png"
+      },
+      {
+        "label": "MDN Web",
+        "value": "https://developer.mozilla.org",
+        "icon": "https://jaywcjlove.github.io/logo/mozilla.svg"
+      },
+      {
+        "label": "掘金",
+        "value": "https://juejin.im",
+        "icon": "https://jaywcjlove.github.io/logo/juejin.svg"
+      },
+      {
+        "label": "Can I use",
+        "value": "https://caniuse.com/",
+        "icon": "https://jaywcjlove.github.io/logo/caniuse.png"
+      },
+      {
+        "label": "极客学院",
+        "value": "http://www.jikexueyuan.com/",
+        "icon": "https://jaywcjlove.github.io/logo/jikexueyuan.jpg"
+      }
+    ]
+  },
+  {
+    "label": "社区",
+    "value": "community",
+    "children": [
+      {
+        "label": "豆瓣",
+        "value": "https://www.douban.com",
+        "icon": "https://jaywcjlove.github.io/logo/douban.svg"
+      },
+      {
+        "label": "知乎",
+        "value": "https://www.zhihu.com",
+        "icon": "https://jaywcjlove.github.io/logo/zhihu.svg"
+      },
+      {
+        "label": "威锋网",
+        "value": "http://www.feng.com",
+        "icon": "https://jaywcjlove.github.io/logo/feng.svg"
+      },
+      {
+        "label": "猫扑",
+        "value": "http://www.mop.com",
+        "icon": "https://jaywcjlove.github.io/logo/mop.jpg"
+      },
+      {
+        "label": "V2EX",
+        "value": "https://www.v2ex.com",
+        "icon": "https://jaywcjlove.github.io/logo/v2ex.svg"
+      },
+      {
+        "label": "简书",
+        "value": "http://www.jianshu.com",
+        "icon": "https://jaywcjlove.github.io/logo/jianshu.png"
+      }
+    ]
+  },
+  {
+    "label": "设计",
+    "value": "design",
+    "children": [
+      {
+        "label": "500px",
+        "value": "https://500px.com/",
+        "icon": "https://jaywcjlove.github.io/logo/500px.svg"
+      },
+      {
+        "label": "站酷",
+        "value": "http://www.zcool.com.cn/",
+        "icon": "https://jaywcjlove.github.io/logo/zcool.svg"
+      },
+      {
+        "label": "TOPYS",
+        "value": "http://www.topys.cn/",
+        "icon": "https://jaywcjlove.github.io/logo/topys.png"
+      },
+      {
+        "label": "IconFont",
+        "value": "http://iconfont.cn/",
+        "icon": "https://jaywcjlove.github.io/logo/iconfont.svg"
+      },
+      {
+        "label": "Worldvectorlogo",
+        "value": "https://worldvectorlogo.com/",
+        "icon": "https://jaywcjlove.github.io/logo/worldvectorlogo.svg"
+      },
+      {
+        "label": "优设",
+        "value": "http://www.uisdc.com/",
+        "icon": "https://jaywcjlove.github.io/logo/uisdc.jpg"
+      },
+      {
+        "label": "盒子UI",
+        "value": "http://www.boxui.com/",
+        "icon": "https://jaywcjlove.github.io/logo/boxui.jpg"
+      },
+      {
+        "label": "优艾网",
+        "value": "http://www.chinaui.com/",
+        "icon": "https://jaywcjlove.github.io/logo/chinaui.svg"
+      },
+      {
+        "label": "涂鸦王国",
+        "value": "https://www.gracg.com/",
+        "icon": "https://jaywcjlove.github.io/logo/gracg.jpg"
+      },
+      {
+        "label": "UI中国",
+        "value": "http://www.ui.cn/",
+        "icon": "https://jaywcjlove.github.io/logo/ui.svg"
+      },
+      {
+        "label": "Pinterest",
+        "value": "https://www.pinterest.com/",
+        "icon": "https://jaywcjlove.github.io/logo/pinterest.svg"
+      },
+      {
+        "label": "Behance",
+        "value": "https://www.behance.net/",
+        "icon": "https://jaywcjlove.github.io/logo/behance.svg"
+      },
+      {
+        "label": "Dribbble",
+        "value": "https://dribbble.com/",
+        "icon": "https://jaywcjlove.github.io/logo/dribbble.svg"
+      },
+      {
+        "label": "PSDDD.co",
+        "value": "https://psddd.co/",
+        "icon": "https://jaywcjlove.github.io/logo/psddd.jpg"
+      },
+      {
+        "label": "视觉",
+        "value": "http://shijue.me/",
+        "icon": "https://jaywcjlove.github.io/logo/shijue.svg"
+      },
+      {
+        "label": "素材中国",
+        "value": "http://www.sccnn.com/",
+        "icon": "https://jaywcjlove.github.io/logo/sccnn.svg"
+      },
+      {
+        "label": "花瓣网",
+        "value": "http://huaban.com/",
+        "icon": "https://jaywcjlove.github.io/logo/huaban.svg"
+      }
+    ]
+  },
+  {
+    "label": "开发",
+    "value": "development",
+    "children": [
+      {
+        "label": "Stack Overflow",
+        "value": "http://stackoverflow.com/",
+        "icon": "https://jaywcjlove.github.io/logo/stackoverflow.png"
+      },
+      {
+        "label": "MDN Web",
+        "value": "https://developer.mozilla.org",
+        "icon": "https://jaywcjlove.github.io/logo/mozilla.svg"
+      },
+      {
+        "label": "Apple Developer",
+        "value": "https://developer.apple.com/",
+        "icon": "https://jaywcjlove.github.io/logo/MacApple.svg"
+      },
+      {
+        "label": "NPM",
+        "value": "https://www.npmjs.com/",
+        "icon": "https://jaywcjlove.github.io/logo/npm.svg"
+      },
+      {
+        "label": "掘金",
+        "value": "https://juejin.im",
+        "icon": "https://jaywcjlove.github.io/logo/juejin.svg"
+      },
+      {
+        "label": "CSDN",
+        "value": "http://www.csdn.net/",
+        "icon": "https://jaywcjlove.github.io/logo/csdn.svg"
+      },
+      {
+        "label": "SegmentFault",
+        "value": "https://segmentfault.com/",
+        "icon": "https://jaywcjlove.github.io/logo/segmentfault.svg"
+      },
+      {
+        "label": "博客园",
+        "value": "https://www.cnblogs.com/",
+        "icon": "https://jaywcjlove.github.io/logo/cnblogs.svg"
+      },
+      {
+        "label": "小专栏",
+        "value": "https://xiaozhuanlan.com/",
+        "icon": "https://jaywcjlove.github.io/logo/xiaozhuanlan.svg"
+      },
+      {
+        "label": "Android 开发技术周报",
+        "value": "https://www.androidweekly.cn",
+        "icon": "https://jaywcjlove.github.io/logo/androidweekly.jpg"
+      },
+      {
+        "label": "干货集中营",
+        "value": "http://gank.io/",
+        "icon": "https://jaywcjlove.github.io/logo/gank.jpg"
+      },
+      {
+        "label": "开发者头条",
+        "value": "https://toutiao.io",
+        "icon": "https://jaywcjlove.github.io/logo/toutiao.svg"
+      },
+      {
+        "label": "Hacker News",
+        "value": "https://news.ycombinator.com/",
+        "icon": "https://jaywcjlove.github.io/logo/ycombinator.svg"
+      },
+      {
+        "label": "Startup News",
+        "value": "http://news.dbanotes.net/",
+        "icon": "https://jaywcjlove.github.io/logo/news.dbanotes.jpg"
+      },
+      {
+        "label": "Code4App",
+        "value": "http://www.code4app.com/",
+        "icon": "https://jaywcjlove.github.io/logo/code4app.jpg"
+      },
+      {
+        "label": "开源中国",
+        "value": "http://www.oschina.net/",
+        "icon": "https://jaywcjlove.github.io/logo/oschina.svg"
+      },
+      {
+        "label": "GitHub",
+        "value": "https://github.com/",
+        "icon": "https://jaywcjlove.github.io/logo/github.svg"
+      },
+      {
+        "label": "Gitlab",
+        "value": "https://gitlab.com/",
+        "icon": "https://jaywcjlove.github.io/logo/gitlab.svg"
+      },
+      {
+        "label": "码云",
+        "value": "https://gitee.com/",
+        "icon": "https://jaywcjlove.github.io/logo/gitee.svg"
+      },
+      {
+        "label": "Coding",
+        "value": "https://coding.net/",
+        "icon": "https://jaywcjlove.github.io/logo/coding.svg"
+      },
+      {
+        "label": "StackBlitz",
+        "value": "https://stackblitz.com/",
+        "icon": "https://jaywcjlove.github.io/logo/stackblitz.svg"
+      },
+      {
+        "label": "CodePen",
+        "value": "https://codepen.io/",
+        "icon": "https://jaywcjlove.github.io/logo/codepen.svg"
+      },
+      {
+        "label": "JS Fiddle",
+        "value": "https://jsfiddle.net",
+        "icon": "https://jaywcjlove.github.io/logo/jsfiddle.svg"
+      },
+      {
+        "label": "RunJS",
+        "value": "http://runjs.cn/",
+        "icon": "https://jaywcjlove.github.io/logo/runjs.jpg"
+      },
+      {
+        "label": "w3cschool",
+        "value": "https://www.w3cschool.cn/",
+        "icon": "https://jaywcjlove.github.io/logo/w3cschool.svg"
+      },
+      {
+        "label": "Can I use",
+        "value": "https://caniuse.com/",
+        "icon": "https://jaywcjlove.github.io/logo/caniuse.png"
+      },
+      {
+        "label": "极客学院",
+        "value": "http://www.jikexueyuan.com/",
+        "icon": "https://jaywcjlove.github.io/logo/jikexueyuan.jpg"
+      }
+    ]
+  }
+]

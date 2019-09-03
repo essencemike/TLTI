@@ -6,6 +6,11 @@ import {
   MessageBox,
   Message,
   Notification,
+  Dialog,
+  Button,
+  Form,
+  FormItem,
+  Input,
   Icon,
   Switch,
   Divider,
@@ -54,8 +59,13 @@ Vue.config.productionTip = false;
 Vue.prototype.$ELEMENT = { size: 'medium', zIndex: 3000 };
 
 Vue.use(Icon);
+Vue.use(Dialog);
+Vue.use(Button);
 Vue.use(Switch);
 Vue.use(Tabs);
+Vue.use(Form);
+Vue.use(FormItem);
+Vue.use(Input);
 Vue.use(TabPane);
 Vue.use(Divider);
 Vue.use(Select);

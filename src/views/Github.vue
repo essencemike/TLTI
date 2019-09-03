@@ -41,7 +41,7 @@
               span {{ item.todayStar }}
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue, Inject } from 'vue-property-decorator';
 import cheerio from 'cheerio';
 import { fetchInterval, fetchTimely } from '@/utils';
 import optionLang from './../source/trending.json';
@@ -50,6 +50,7 @@ const githubList = localStorage.getItem('github-list');
 
 @Component
 export default class Github extends Vue {
+  @Inject() readonly config!: any;
   option: any[] = [
     { label: '今天', value: '' },
     { label: '本周', value: 'weekly' },

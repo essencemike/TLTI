@@ -25,5 +25,6 @@ declare global {
     detachEvent?: any;
     currentStyle?: any;
     filters?: any;
+    '@@clickoutsideContext'?: any;
   }
 }
